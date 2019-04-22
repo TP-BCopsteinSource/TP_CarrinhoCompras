@@ -2,13 +2,14 @@ package com.bcopstein.CarrinhoCompras;
 
 import java.util.List;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import static org.mockito.Mockito.*;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class TestMockito {
-
 	@Test
 	public void test() {
 		List<String> mockList = mock(List.class);
