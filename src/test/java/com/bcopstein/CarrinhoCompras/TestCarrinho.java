@@ -23,11 +23,13 @@ public class TestCarrinho {
 	}
 
 	private CarrinhoCompras carrinho;
-	private Cotacao mockCotacao = mock(Cotacao.class);
-	private Frete mockFrete = mock(Frete.class);
+	private Cotacao mockCotacao;
+	private Frete mockFrete;
 
 	@BeforeEach
 	public void setUp() throws Exception {
+		mockCotacao = mock(Cotacao.class);
+		mockFrete = mock(Frete.class);
 		when(mockCotacao.getCotacao(Moeda.DOLAR)).thenReturn(1.0);
 		when(mockCotacao.getCotacao(Moeda.REAL)).thenReturn(3.8);
 
